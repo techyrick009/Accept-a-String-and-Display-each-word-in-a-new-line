@@ -1,0 +1,27 @@
+
+/*
+ Copyright   : Techyrick.com
+ Description : Accept a String and Display each word in a new line
+ ============================================================================
+ */
+
+#include<stdio.h>
+int main(void) {
+
+	int text;
+
+	printf("Enter a sentence :");
+
+	while ((text = getchar()) != '\n') {
+
+		putchar(text);
+
+		if (text == ' ') {
+			printf("\n");
+		}
+
+	}
+
+	return 0;
+}
+
